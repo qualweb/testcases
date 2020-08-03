@@ -1,0 +1,30 @@
+<form action="http://example.com/vote" method="post">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <fieldset style="display: none;">
+    <legend>Your preferred philosopher</legend>
+    <input
+      type="radio"
+      name="philosopher"
+      id="philosopher_socrates"
+      value="socrates"
+    />
+    <label for="philosopher_socrates">Socrates</label>
+    <input
+      type="radio"
+      name="philosopher"
+      id="philosopher_plato"
+      value="plato"
+    />
+    <label for="philosopher_plato">Plato</label>
+    <input
+      type="radio"
+      name="philosopher"
+      id="philosopher_aristotle"
+      value="aristotle"
+    />
+    <label for="philosopher_aristotle">Aristotle</label>
+  </fieldset>
+</form>
