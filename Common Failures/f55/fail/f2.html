@@ -1,0 +1,10 @@
+<!-- Focus is removed from element. -->
+<form>
+  <label>Name:<input type="text" onfocus="removeFocus()" /></label>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+<script type="text/javascript">
+  function removeFocus() {
+    document.getElementById("submit").focus();
+  }
+</script>
