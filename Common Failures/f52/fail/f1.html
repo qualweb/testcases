@@ -1,0 +1,14 @@
+<!-- The page opens a new window on load. -->
+<body>
+  <script type="text/javascript">
+    function showAdvertisement() {
+      window.open("noscript.html", "_blank", "height=200,width=150");
+    }
+    if (window.addEventListener) {
+      window.addEventListener("load", showAdvertisement, true);
+    }
+    if (window.attachEvent) {
+      window.attachEvent("onload", showAdvertisement);
+    }
+  </script>
+</body>

@@ -1,0 +1,14 @@
+<!-- The page opens a new window on load. -->
+<body>
+  <script type="text/javascript">
+    function showAdvertisement() {
+      alert("I don't open a new window!")
+    }
+    if (window.addEventListener) {
+      window.addEventListener("load", showAdvertisement, true);
+    }
+    if (window.attachEvent) {
+      window.attachEvent("onload", showAdvertisement);
+    }
+  </script>
+</body>
