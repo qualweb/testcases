@@ -1,0 +1,46 @@
+<!-- Please check if the first link of the page skips to the main content. -->
+<html>
+  <head>
+    <style>
+      #skiplink a {
+        padding: 6px;
+        position: absolute;
+        top: -40px;
+        left: 0px;
+        color: white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        border-bottom-right-radius: 8px;
+        background: rgb(3, 12, 141);
+        -webkit-transition: top 1s ease-out;
+        transition: top 1s ease-out;
+        z-index: 100;
+      }
+
+      #skiplink a:focus {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        outline-color: transparent;
+        -webkit-transition: top 0.1s ease-in;
+        transition: top 0.1s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="skiplink">
+      <a href="#main">Skip to main content</a>
+    </div>
+    <h2>Advertisement</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      reprehenderit ut excepturi odio, modi eius dolorem, velit eveniet
+      voluptatem perspiciatis amet atque ipsam quo, non quidem. Ex ullam
+      voluptatem iste?
+    </p>
+    <div>
+      <h2 id="main">Main content</h2>
+      <p>Now that I have your attention...</p>
+    </div>
+  </body>
+</html>
