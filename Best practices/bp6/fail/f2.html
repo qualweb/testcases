@@ -1,0 +1,13 @@
+<!-- Title has more than 100 characters. -->
+<html>
+  <head>
+    <title>This title is going to change</title>
+    <script type="text/javascript">
+      function changeTitle() {
+        document.title =
+          "This is a new title and a big one that will cause the best practice to signal an error because it is over the arbitrary limit of characters";
+      }
+    </script>
+  </head>
+  <body onload="changeTitle()"></body>
+</html>
